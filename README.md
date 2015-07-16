@@ -2,11 +2,6 @@
 
 `./manage.py runserver`
 
-create superuser admin/admin
-
-`./manage.py createsuperuser`
-
-
 how to test via web: go to http://localhost:8000/
 
 how to test via API: 
@@ -22,5 +17,5 @@ ddd ffff gg bbba
 
 * execute curl as:
 
-`curl -H 'Accept: application/json; indent=4' -u admin:admin http://127.0.0.1:8000/api/v1.0/resource/ --data-binary @./test.txt`
+`curl -H 'Accept: application/json; indent=4' http://127.0.0.1:8000/api/v1.0/resource/ --data-binary @./test.txt`
 
