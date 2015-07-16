@@ -2,6 +2,10 @@
 
 `./manage.py runserver`
 
+create superuser admin/admin
+
+`./manage.py createsuperuser`
+
 
 how to test via web: go to http://localhost:8000/
 
