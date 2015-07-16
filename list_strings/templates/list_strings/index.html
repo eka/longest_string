@@ -1,0 +1,11 @@
+{% include 'list_strings/base.html' %}
+
+{% block content %}
+  <form action="." method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="submit" name="submit"/>
+  </form>
+  {% if res %}
+    <p>result: {{ res }}</p>
+  {% endif %}
+{% endblock %}
